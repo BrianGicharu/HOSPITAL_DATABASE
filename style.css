@@ -1,0 +1,40 @@
+#label{
+    font-size: 12;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.center{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #FFFF00;
+    padding: 10px;
+    background-color:darkseagreen;
+}
+.center_bottom{
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #FFFF00;
+    padding: 10px;
+    background-color:rgb(125, 160, 96);
+}
+.center_buttons{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color:burlywood;
+}
+
+.alignJustified{
+    display:flex;
+    justify-content: center;
+}
+
+button{
+    margin: 13px 12px 12px 10px;
+}
