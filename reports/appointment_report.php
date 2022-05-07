@@ -50,7 +50,7 @@
                             .$row["APPOINTMENT_TIME"]. "</td><td>".$row["DOCTORS_CHARGE"]."</tr>";
                         }
                         echo "</table>";
-                    } else { echo "<script>alert(\"0 records found for ward table\")</script>"; }
+                    } else { echo "<script>alert(\"0 records found for appointment table\")</script>"; }
                     $conn->close();
                 ?>
             </table>

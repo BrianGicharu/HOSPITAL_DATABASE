@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <!-- INTERACTION ENTRY POINT. START PAGE -->
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -51,7 +52,7 @@
                 <button type="button" class="btn-info" onclick="location.href='./reports/patient_report.php'">PATIENT REPORT</button>
                 <button type="button" class="btn-info" onclick="location.href='./reports/specialty_report.php'">SPECIALTY REPORT</button>
                 <button type="button" class="btn-info" onclick="location.href='./reports/ward_report.php'">WARD REPORT</button>
-            </div>            
+            </div>
         </div>
     </body>
 </html>

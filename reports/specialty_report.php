@@ -53,7 +53,7 @@
                                 ."</tr>";
                         }
                         echo "</table>";
-                    } else { echo "<script>alert(\"0 records found for patients' table\")</script>"; }
+                    } else { echo "<script>alert(\"0 records found for specialty' table\")</script>"; }
                     $conn->close();
                 ?>
             </table>
