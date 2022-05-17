@@ -63,7 +63,6 @@
                                 .$row["ZIPCODE"]."</td><td>"
                                 ."</tr>";
                         }
-                        echo "</table>";
                     } else { echo "<script>alert(\"0 records found for doctor table\")</script>"; }
                     $conn->close();
                 ?>

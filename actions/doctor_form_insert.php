@@ -18,7 +18,7 @@
 
         $statement->bind_param("issssssss",
                                 $_POST['dr_id'], $_POST['dr_fname'], $_POST['dr_lname'],
-                                $_POST['dr_email'], $_POST['dr_isactive'], $_POST['dr_password'],
+                                $_POST['dr_email'], $_POST['dr_isactive'], password_hash($_POST['dr_password'], PASSWORD_DEFAULT),
                                 $_POST['dr_state'], $_POST['dr_city'], $_POST['dr_zip_code']);
 
         $statement->execute();
@@ -28,6 +28,7 @@
     }
     print_r(
         "<!DOCTYPE html>
+        <html>
             <head>
                 <title>200: INSERT SUCCESS</title>
                 <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\"

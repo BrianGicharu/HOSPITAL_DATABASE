@@ -14,11 +14,11 @@
                 VALUES (?, ?, ?);";
 
         $statement = $conn->prepare($q);
-
-        $statement->bind_param("iss",
+        $hash_pwd = password_hash($_POST['admin_password'], PASSWORD_DEFAULT);
+        $statement->bind_param("isb",
                                 $_POST['admin_id'],
                                 $_POST['admin_email'],
-                                $_POST['admin_password']
+                                $hash_pwd
                             );
 
         $statement->execute();

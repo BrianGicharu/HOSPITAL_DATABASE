@@ -19,8 +19,8 @@
         $statement->bind_param("isssssssss",
                                 $_POST['patient_id'], $_POST['patient_email'], $_POST['patient_fname'],
                                 $_POST['patient_lname'], $_POST['patient_yob'], $_POST['patient_gender'],
-                                $_POST['patient_password'], $_POST['patient_city'], $_POST['patient_state'],
-                                $_POST['patient_zip_code']);
+                                password_hash($_POST['patient_password'], PASSWORD_DEFAULT), $_POST['patient_city'],
+                                $_POST['patient_state'], $_POST['patient_zip_code']);
 
         $statement->execute();
 
