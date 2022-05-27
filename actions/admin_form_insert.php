@@ -15,7 +15,7 @@
 
         $statement = $conn->prepare($q);
         $hash_pwd = password_hash($_POST['admin_password'], PASSWORD_DEFAULT);
-        $statement->bind_param("isb",
+        $statement->bind_param("iss",
                                 $_POST['admin_id'],
                                 $_POST['admin_email'],
                                 $hash_pwd

@@ -15,10 +15,10 @@
                                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         $statement = $conn->prepare($q);
-
+        $hash_pwd = password_hash($_POST['dr_password'], PASSWORD_DEFAULT);
         $statement->bind_param("issssssss",
                                 $_POST['dr_id'], $_POST['dr_fname'], $_POST['dr_lname'],
-                                $_POST['dr_email'], $_POST['dr_isactive'], password_hash($_POST['dr_password'], PASSWORD_DEFAULT),
+                                $_POST['dr_email'], $_POST['dr_isactive'], $hash_pwd ,
                                 $_POST['dr_state'], $_POST['dr_city'], $_POST['dr_zip_code']);
 
         $statement->execute();

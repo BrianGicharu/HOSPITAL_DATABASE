@@ -22,7 +22,7 @@
             tr:nth-child(even) {background-color: #f2f2f2}
         </style>
     </head>
-    <body style="background-color:beige;">
+    <body style="background-color:lightblue;">
         <div class="text-center container" style="font-size:50;font-weight: bold;font-family: Verdana, Geneva, Tahoma, sans-serif;">
             PATIENT REPORT
         </div>
