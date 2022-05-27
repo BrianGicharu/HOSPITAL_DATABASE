@@ -3,6 +3,8 @@ A Web Application for handling a Hospital database
 
 ![Start-page](index_page.JPG)
 <hr>
-![Form](dept_entry_form.JPG)
+<p float="left">
+  <img src="/dept_entry_form.JPG" width="100" />
+  <img src="/doctor_report" width="100" />
+</p>
 <hr>
-![Dr](doctor_report.JPG)
